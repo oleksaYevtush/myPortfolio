@@ -17,7 +17,7 @@ export default function Home({ pageProps }) {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ['start start', 'end end'],
+    offset: ['start start', 'end end']
   }) || { scrollYProgress: 0 };
 
   const [Loaded, setLoaded] = useState(false);
