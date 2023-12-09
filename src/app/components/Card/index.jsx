@@ -16,10 +16,10 @@ const Card = ({i, title, description, src, url, color, progress, range, targetSc
   const scale = useTransform(progress, range, [1, targetScale]);
  
   return (
-    <div ref={container} className={styles.cardContainer}>
+    <div ref={container} className={styles.cardContainer} id="certificate">
       <motion.div 
         style={{ backgroundColor: color, scale, translateY: `calc(-5vh + ${i * 25}px)` }} 
-        className={styles.card}>
+        className={styles.card}>        
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.body}>
           <div className={styles.description}>

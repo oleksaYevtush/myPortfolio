@@ -11,19 +11,19 @@ import Link from "next/link";
 
 const navLinks = [
   {
-    title: "_About",
+    title: "<About/>",
     path: "#about",
   },
   {
-    title: "_Projects",
+    title: "<Projects/>",
     path: "#projects",
   },
   {
-    title: "_Skill",
+    title: "<Skill/>",
     path: "#skill",
   },
   {
-    title: "_Contact",
+    title: "<Contact/>",
     path: "#contact",
   },
 ];

@@ -6,6 +6,15 @@
   position: sticky;
   top: 0px;
   z-index: 1;
+  .titleCertif {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: 'Title';
+    z-index: 2;
+  }  
   .card{
     z-index: 1;
     display: flex;
