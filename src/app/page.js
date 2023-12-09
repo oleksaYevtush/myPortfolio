@@ -11,32 +11,29 @@ import { useScroll, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { projects } from '../data';
 import Card from '../app/components/Card';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
-export default function Home() {
+export default function Home({ pageProps }) {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ['start start', 'end end']
-  }) || { scrollYProgress: 0 }; 
-  
+    offset: ['start start', 'end end'],
+  }) || { scrollYProgress: 0 };
+
   const [Loaded, setLoaded] = useState(false);
-  
 
   useEffect(() => {
-  
-      function raf(time) {
-        requestAnimationFrame(raf);
-      }
-  
+    function raf(time) {
       requestAnimationFrame(raf);
+    }
 
-      setTimeout(() => {
+    requestAnimationFrame(raf);
+
+    setTimeout(() => {
       setLoaded(true);
     }, 3000);
   }, []);
   
-  
-
   return (
     <main
       ref={container}
@@ -65,6 +62,7 @@ export default function Home() {
             <Footer />
           </>
         )}
-      </main>
+        {Loaded && <ScrollToTopButton scrollProgress={scrollYProgress} />}
+      </main>  
   );
 }

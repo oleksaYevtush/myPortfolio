@@ -14,7 +14,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
           className="col-span-8 text-center place-self-center sm:text-left justify-self-start">
-          <h1 className="mb-4 text-3xl font-extrabold text-[#e0cbe1] md:text-6xl sm:text-5xl lg:text-7xl lg:leading-normal">
+          <h1 className="mb-4 text-3xl font-bold text-[#e0cbe1] md:text-6xl sm:text-5xl lg:text-7xl lg:leading-normal">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-200">
               Hello, I&apos;m{" "}
             </span>
@@ -65,8 +65,8 @@ const HeroSection = () => {
                 src="/images/hero-image.webp"
                 alt="hero image"
                 className="w-full h-full rounded-full"
-                width={320}
-                height={320}
+                width={300}
+                height={300}
                 priority
               />
             </motion.div>

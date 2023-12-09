@@ -36,8 +36,8 @@ const AboutSection = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <h2 className="mb-4 text-4xl font-bold ext-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-200">About Me</h2>
-          <p className="text-[#e0cbe1] lg:text-lg">
+          <h2 className="mb-4 text-4xl font-bold font-title ext-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-200">About Me</h2>
+          <p className="text-[#e0cbe1] lg:text-lg ">
             <span>&apos;//</span> I am a Junior Front-end Developer who enjoys the development process, especially when solving challenging tasks and achieving results.
             <br />
             <span>&apos;//</span> I quickly enter into the work process and create new skills.
