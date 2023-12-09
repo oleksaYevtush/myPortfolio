@@ -21,16 +21,17 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                ">_ Oleksandra",
+                ">_Oleksandra",
                 1000,
-                ">_ Frontend",
+                ">_Frontend",
                 1000,
-                ">_ Developer",
+                ">_Developer",
                 1000,
               ]}
               wrapper="span"
               speed={50}
-              repeat={Infinity} />
+              repeat={Infinity}
+              className="font-title" />
           </h1>
           <div>
             <Link
