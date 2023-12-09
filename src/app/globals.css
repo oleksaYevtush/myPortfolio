@@ -36,4 +36,18 @@ body {
     font-family: 'Title', sans-serif;
   }
 }
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #b074cb;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 
