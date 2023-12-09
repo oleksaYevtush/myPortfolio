@@ -12,6 +12,7 @@ import { useState, useEffect, useRef } from "react";
 import { projects } from '../data';
 import Card from '../app/components/Card';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import Cursor from "./components/Cursor";
 
 export default function Home({ pageProps }) {
   const container = useRef(null);
@@ -76,6 +77,7 @@ export default function Home({ pageProps }) {
           </>
         )}
         {Loaded && <ScrollToTopButton scrollProgress={scrollYProgress} />}
+        {Loaded && <Cursor />}
       </main>  
   );
 }
