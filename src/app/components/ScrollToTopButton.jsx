@@ -18,14 +18,12 @@ const ScrollToTopButton = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   const scrollToTop = () => {
     scroll.scrollToTop({
       duration: 1000,
       smooth: 'easeInOutQuad',
     });
   };
-
   const buttonStyle = {
     bottom: `${scrollProgress * 20}px`,  
     background: `linear-gradient(to right, #180f1f ${scrollProgress * 100}%, #3b1f3d ${scrollProgress * 100}%)`,
@@ -36,7 +34,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       className="fixed p-3 bg-[#412555c7] transition duration-300 rounded-full shadow-lg bottom-10 right-12"
       style={buttonStyle}>
-      <Image src={GithubIcon} alt="Linkedin Icon" width={40} height={40} />
+      <Image src={GithubIcon} alt="Icon" width={40} height={40} />
       &#8593;
     </button>
   );
