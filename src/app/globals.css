@@ -31,3 +31,9 @@ body {
   src: url('../../public/fonts/Neglige.otf');
 }
 
+@layer components {
+  .font-title {
+    font-family: 'Title', sans-serif;
+  }
+}
+

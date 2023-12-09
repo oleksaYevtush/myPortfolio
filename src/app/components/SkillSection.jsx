@@ -87,7 +87,7 @@ const SkillSection = () => {
 
   return (
     <section className="text-[#e0cbe1]" id="skill">
-      <div className="flex flex-row justify-center mt-8">
+      <div className="flex flex-row justify-center mt-8 font-title">
         {TAB_DATA.map((t) => (
           <TabButton
             key={t.id}
@@ -98,14 +98,13 @@ const SkillSection = () => {
           </TabButton>
         ))}
       </div>
-      <div className="flex justify-center mt-8 text-45 flex-column">
+      <div className="flex justify-center mt-8 font-title text-45 flex-column">
         <motion.div
           key={tab}  
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.75 }}  
-        >
+          transition={{ duration: 0.75 }}  >
           {TAB_DATA.find((t) => t.id === tab).content}
         </motion.div>
       </div>
