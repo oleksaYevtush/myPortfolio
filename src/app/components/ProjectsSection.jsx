@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "☕️Coffee World",
-    description: "Next.js/i18next/Formik/react-spring/router/adaptive-design/React-Hooks/framer-motion/yup-validation",
+    description: "i18next | Formik | react-spring | React-Hooks | framer-motion | yup",
     image: "/images/projects/1.png",
     tag: ["All", "Next.js"],
     gitUrl: "/",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "🍝Dish Delight",
-    description: "JS/React.js/ReactHooks/API/SCSS/Bootstrap/adaptive-design",
+    description: "ReactHooks | API | SCSS | Bootstrap | adaptive",
     image: "/images/projects/2.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/olexaevtush/DishDelight",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "📖Booklib",
-    description: "JS/React.js/React-Hooks/API/SCSS/adaptive-design",
+    description: "React-Hooks | API | SCSS",
     image: "/images/projects/3.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/olexaevtush/Booklib",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     id: 4,
     title: "🥐Fresh Bakery",
-    description: "Bootstrap/HTML/CSS/JS/adaptive-design",
+    description: "Bootstrap | JS | adaptive",
     image: "/images/projects/4.png",
     tag: ["All", "CSS"],
     gitUrl: "/",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     id: 5,
     title: "🧖🏼‍♀️Skincare",
-    description: "Bootstrap/HTML/CSS/JS/adaptive-design/animation",
+    description: "Bootstrap | JS | animation",
     image: "/images/projects/5.png",
     tag: ["All", "CSS"],
     gitUrl: "https://github.com/olexaevtush/Skincare",
@@ -53,7 +53,7 @@ const projectsData = [
   {
     id: 6,
     title: "📲Namelist",
-    description: "JS/React.js/React-Hooks/API/SCSS/adaptive-design/fetch",
+    description: "JS | React-Hooks | fetch",
     image: "/images/projects/6.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/olexaevtush/react-namelist",
@@ -62,7 +62,7 @@ const projectsData = [
   {
     id: 7,
     title: "🌃FavoriteTour",
-    description: "HTML/CSS/JS/adaptive-design/animation",
+    description: "JS | adaptive | animation",
     image: "/images/projects/7.png",
     tag: ["All", "CSS"],
     gitUrl: "https://github.com/olexaevtush/FavoriteTour",
@@ -71,9 +71,9 @@ const projectsData = [
   {
     id: 8,
     title: "👩🏻‍💻My Portfolio",
-    description: "Next.js/Tailwind CSS/framer-motion/Router/adaptive-design/React-Hooks/Swiper",
+    description: "Next.js | Tailwind CSS | framer-motion | react-scroll",
     image: "/images/projects/8.png",
-    tag: ["All", "Tailwind"],
+    tag: ["All","Next.js", "Tailwind"],
     gitUrl: "/",
     previewUrl: "/",
   }

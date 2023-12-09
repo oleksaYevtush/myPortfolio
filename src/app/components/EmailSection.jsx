@@ -18,9 +18,11 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          👋🏼I will be glad to see you in my contacts.<br></br>
+          You can contact me here: olexaevtush@gmail.com<br></br>
+          Telegram: https://t.me/OlexaEvtush<br></br>
+          ✨I&apos;m currently looking for new opportunities, my inbox is always open.<br></br>
+          🤝I believe that I can become a valuable employee and help achieve the project&apos;s success.
         </p>
         <div className="flex flex-row gap-2 socials">
           <Link href="https://github.com/olexaevtush">
