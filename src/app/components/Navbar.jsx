@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import Image from "next/image";
 import Workplace from "../../../public/workplace.png";
-import MenuIcon from "/public/skills-icon.png";
+import MenuIcon from "/public/menu.png";
 import MenuOverlay from "./MenuOverlay";
-import Icon from "/public/linkedin-icon.svg";
+import Icon from "/public/close.png";
 
 import Link from "next/link";
 
@@ -41,19 +41,19 @@ const Navbar = () => {
             height={40} alt="workplace" />
         </Link>
         <div className="block mobile-menu md:hidden">
-          {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
-              <Image src={MenuIcon} width={24} height={24} alt="menu icon" />
-            </button>
-          ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
-              <Image src={Icon} width={24} height={24} alt="x icon" />
-            </button>
-          )}
+        {!navbarOpen ? (
+          <button
+            onClick={() => setNavbarOpen(true)}
+            className="flex items-center px-3 py-2 text-slate-200 hover:text-white focus:outline-none focus:border-none focus:ring-0">
+            <Image src={MenuIcon} width={40} height={40} alt="menu icon" />
+          </button>
+        ) : (
+          <button
+            onClick={() => setNavbarOpen(false)}
+            className="flex items-center py-2 lg:px-3 hover:text-white focus:outline-none focus:border-none focus:ring-0">
+            <Image src={Icon} width={40} height={40} alt="x icon" />
+          </button>
+        )}
         </div>
         <div className="hidden menu md:block md:w-auto" id="navbar">
           <ul className="flex p-4 mt-0 md:p-0 md:flex-row md:space-x-8">

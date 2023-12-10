@@ -6,6 +6,9 @@
   .animation-delay-2000 {
     animation-delay: 2s;
   }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
   .animation-delay-4000 {
     animation-delay: 4s;
   }
@@ -56,6 +59,7 @@ body {
   transform-origin: 50% 50%;
   mix-blend-mode: difference;
   z-index: 9999;
+  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 

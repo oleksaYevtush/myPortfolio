@@ -37,6 +37,12 @@
       font-size: 28px;
       font-family: 'Title';
     }
+    @media (max-width: 396px) {
+      h2 {
+        font-size: 12px;
+      }
+ 
+    }
     .body{
       display: flex;
       height: 100%;
