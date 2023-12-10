@@ -12,7 +12,7 @@ const TabButton = ({ active, selectTab, children, icon, controls }) => {
 
   return (
     <button onClick={selectTab} className="flex items-center">
-      <p className={`text-3xl mr-2 font-semibold hover:text-white ${buttonClasses}`}>
+      <p className={`lg:text-3xl md:font-19 sm:font-19 mr-2 font-semibold hover:text-white ${buttonClasses}`}>
         {children}
       </p>
       {icon && <Image src={icon} alt="Icon" className="w-6 h-6" />}

@@ -10,10 +10,10 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="relative grid gap-4 py-24 my-12 md:gap-6 md:grid-cols-2 md:my-12 sm:justify-items-center">
-      <div className=" bg-[#512f6b] rounded-[20px] h-80 w-80 z-0 blur-[95px] scale-120 opacity-95 absolute top-50 -left-45 transform -translate-x-1/2 -translate-1/2 animate-blob animation-delay-2000"></div>
-      <div className=" bg-[#6c3075] rounded-[20px] h-80 w-80 z-0 blur-[95px] scale-120 opacity-95 absolute top-30 -left-65 transform -translate-x-1/2 -translate-1/2 animate-blob animation-delay-2000"></div>
-      <div className=" bg-[#46297a] rounded-[20px] h-80 w-80 z-0 blur-[95px] scale-120 opacity-95 absolute top-30 -left-65 transform -translate-x-1/2 -translate-1/2 animate-blob animation-delay-4000"></div>
+      className="relative grid gap-4 py-24 my-12 sm:pt-0 md:gap-6 sm:gap-8 md:grid-cols-2 md:my-12 sm:justify-items-center">
+      <div className=" bg-[#512f6bb2] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-50 -left-45 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-3000"></div>
+      <div className=" bg-[#8f2b9eae] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-30 -left-55 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-2000"></div>
+      <div className=" bg-[#4f2898af] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-30 -left-65 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-4000"></div>
       <div className="z-10">
         <h5 className="font-title my-2 text-xl font-bold text-[#e0cbe1]">
           Let&apos;s Connect
@@ -26,7 +26,7 @@ const EmailSection = () => {
           ✨I&apos;m currently looking for new opportunities, my inbox is always open.<br></br>
           🤝I believe that I can become a valuable employee and help achieve the project&apos;s success.
         </p>
-        <div className="flex flex-row gap-2 socials">
+        <div className="flex flex-row gap-2 socials sm:justify-items-center">
           <Link href="https://github.com/olexaevtush">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>

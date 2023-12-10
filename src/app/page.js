@@ -52,15 +52,14 @@ export default function Home({ pageProps }) {
     <main
       ref={container}
       data-scroll-container
-      className="relative flex flex-col bg-gradient-to-r bg-[#180f1f] to-bg-[#3b1f3d] animate-gradient"
-    >
+      className="relative flex flex-col bg-gradient-to-r bg-[#180f1f] to-bg-[#3b1f3d] animate-gradient">
       <AnimatePresence>
         {Loaded ? null : <Loader key="loader2" />}
       </AnimatePresence>
       {Loaded && (
         <>
           <Navbar />
-            <div className="container px-12 py-4 mx-auto mt-20">
+            <div className="container px-16 mx-auto mt-20 sm:px-12">
               <HeroSection />
               <AboutSection />
               <SkillSection />

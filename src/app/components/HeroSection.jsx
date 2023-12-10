@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="pb-[130px]">
+    <section className="pb-[130px] md:pb-[60px] sm:pb-[30px]">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className=" bg-[#512f6b] rounded-[15px] h-80 w-80 z-0 blur-[125px] scale-120 opacity-130 absolute top-50 -left-45 transform -translate-x-1/2 -translate-1/2 animate-blob animation-delay-2000"></div>
-        <div className=" bg-[#6c3075] rounded-[15px] h-80 w-80 z-0 blur-[125px] scale-120 opacity-130 absolute top-30 -left-55 transform -translate-x-1/2 -translate-1/2 animate-blob animation-delay-2000"></div>
-        <div className=" bg-[#46297a] rounded-[15px] h-80 w-80 z-0 blur-[125px] scale-120 opacity-130 absolute top-30 -left-65 transform -translate-x-1/2 -translate-1/2 animate-blob animation-delay-4000"></div>
+        <div className=" bg-[#612c8bb2] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-50 -left-45 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-3000"></div>
+        <div className=" bg-[#aa31bdae] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-30 -left-55 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-2000"></div>
+        <div className=" bg-[#5c23c6af] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-30 -left-65 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-4000"></div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -39,41 +39,44 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#certificate"
-              className="inline-block w-full px-1 py-1 mr-4 text-white rounded-full sm:w-fit bg-[#121212] hover:bg-slate-800 bg-gradient-to-br from-primary-500 to-secondary-500">
-              <button className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              className="z-0 inline-block w-full px-1 py-1 mr-4 text-white rounded-full sm:w-fit bg-[#121212] hover:bg-slate-800 bg-gradient-to-br from-primary-500 to-secondary-500">
+              <span id="certificate" className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Certificate
-              </button>
+              </span>
             </Link>
             <Link
-              href="/"
-              className="inline-block w-full px-1 py-1 mt-3 text-[#e0cbe1] rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800">
+              href="https://www.linkedin.com/in/оleks-yevtush-b2a082228/"
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-1 inline-block w-full px-1 py-1 mt-3 text-[#e0cbe1] rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 CV
               </span>
             </Link>
-            
           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="col-span-4 mt-2 place-self-center xl:pr-10">
+          className="col-span-4 sm:mt-8 place-self-center">
           <div className="relative lg:mt-4">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              className="lg:w-[360px] lg:h-[360px] md:w-[220px] md:h-[220px] rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-              <Image
-                src="/images/hero-image.webp"
-                alt="hero image"
-                className="w-full h-full rounded-full"
-                width={300}
-                height={300}
-                priority
-              />
-            </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className=" w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <Image
+              src="/images/hero-image.webp"
+              alt="hero image"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 rounded-full sm:top-60 top-1/2 left-1/2"
+              width={300}
+              height={300}
+              priority
+              style={{ top: 'calc(50% + 30px)' }}
+            />
+          </motion.div>
           </div>
         </motion.div>
       </div>

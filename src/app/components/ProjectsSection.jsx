@@ -129,7 +129,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Tailwind"}
         />
       </div>
-      <ul ref={ref} className="grid gap-8 md:grid-cols-3 md:gap-12">
+      <ul ref={ref} className="grid lg:gap-8 md:grid-cols-3 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
