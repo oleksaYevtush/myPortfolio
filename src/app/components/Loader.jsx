@@ -9,20 +9,16 @@ const Container = styled(motion.div)`
   left: 0;
   right: 0;
   bottom: 0;
-touch-action: none;
-overflow: hidden;
+  touch-action: none;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
-
   z-index: 6;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: black;
-
   width: 100%;
 
   @media (max-width: 48em) {
@@ -81,7 +77,9 @@ const Text = styled(motion.span)`
 
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontlg};
-
+  }
+  @media screen and (max-width: 396px) {
+    padding-top: 15px;
   }
 `;
 
@@ -90,16 +88,14 @@ const Loader = () => {
     <Container
       initial={{ y: 0, opacity: 1 }}
       exit={{ y: '100%', opacity: 0 }}
-      transition={{ duration: 2 }}
-    >
+      transition={{ duration: 2 }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         enableBackground="new 0 0 24 24"
         height="48px"
         viewBox="0 0 24 24"
         width="48px"
-        fill="none"
-      >
+        fill="none">
         <g>
           <motion.path
             variants={pathVariants}

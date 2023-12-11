@@ -99,7 +99,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="mt-12 mb-8 text-4xl font-bold text-center text-white md:mb-12">
+      <h2 className="font-title mt-12 mb-8 text-4xl font-bold text-center text-white md:mb-12">
         My Projects
       </h2>
       <div className="flex flex-row flex-wrap items-center justify-center gap-2 py-6 text-white md:flex">
