@@ -23,9 +23,8 @@ const Card = ({i, title, description, src, url, color, progress, range, targetSc
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.body}>
           <div className={styles.description}>
-            <p>{description}</p>
+            <p className={styles.descriptionText}>{description}</p>
           </div>
-
           <div className={styles.imageContainer}>
             <motion.div
               className={styles.inner}
@@ -39,7 +38,6 @@ const Card = ({i, title, description, src, url, color, progress, range, targetSc
               />
             </motion.div>
           </div>
-
         </div>
       </motion.div>
     </div>

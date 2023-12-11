@@ -59,7 +59,7 @@ export default function Home({ pageProps }) {
       {Loaded && (
         <>
           <Navbar />
-            <div className="container px-16 mx-auto mt-20 sm:px-12">
+            <div className="container px-16 mx-auto mt-2 sm:px-12">
               <HeroSection />
               <AboutSection />
               <SkillSection />

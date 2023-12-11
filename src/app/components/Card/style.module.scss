@@ -1,4 +1,4 @@
-.cardContainer{
+.cardContainer {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -6,86 +6,132 @@
   position: sticky;
   top: 0px;
   z-index: 1;
-  .titleCertif {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
+}
+
+.titleCertif {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-family: 'Title';
+  z-index: 2;
+}
+
+.card {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10%;
+  width: 1000px;
+  border-radius: 25px;
+  padding: 50px;
+  transform-origin: top;
+
+  .title {
+    text-align: center;
+    margin: 0px;
+    font-size: 28px;
     font-family: 'Title';
-    z-index: 2;
-  }  
-  .card{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 10%;
-    //height: 550px;
-    width: 1000px;
-    border-radius: 25px;
-    padding:50px;
-    transform-origin: top;
-    @media (max-width: 590px) {
-      h2 {
-        font-size: 15px;
+  }
+
+  @media screen and (max-width: 590px) {
+    .title {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 396px) {
+    .cardContainer {
+      height: 70vh;
+    }
+    .body {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 20px;
+
+      .description {
+        font-size: 12px;
+        width: 100%;
       }
     }
-    h2{
-      text-align: center;
-      margin: 0px;
-      font-size: 28px;
-      font-family: 'Title';
+    .imageContainer {
+      width: 200px;
+      border-radius: 10px;
     }
-    @media (max-width: 396px) {
-      h2 {
+  }
+
+  .body {
+    display: flex;
+    height: 100%;
+    margin-top: 40px;
+    gap: 50px;
+
+    .description {
+      font-family: 'Title';
+      width: 40%;
+      position: relative;
+      top: 10%;
+      p {
+        font-size: 20px;
+
+        &::first-letter {
+          font-size: 28px;
+          font-family: 'Title';
+        }
+      }
+      @media screen and (max-width: 590px) {
+        p {
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-width: 396px) {
+        p {
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        a {
+          font-size: 20px;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    @media screen and (max-width: 396px) {
+      .description {
+        width: 100%;
         font-size: 12px;
       }
- 
     }
-    .body{
-      display: flex;
+
+    .imageContainer {
+      position: relative;
+      width: 60%;
       height: 100%;
-      margin-top: 50px;
-      gap: 50px;
-
-      .description{
-        font-family: 'Title';
-        width: 40%;
-        position: relative;
-        top: 10%;
-        p{
-          font-size: 20px;
-          &::first-letter{
-            font-size: 28px;
-            font-family: 'Title';
-          }
-        }
-        span{
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          a{
-            font-size: 20px;
-            text-decoration: underline;
-            cursor: pointer;
-          }
-        }
-      }
-
-      .imageContainer{
-        position: relative;
-        width: 60%;
+      border-radius: 25px;
+      overflow: hidden;
+  
+      .inner {
+        width: 100%;
         height: 100%;
-        border-radius: 25px;
-        overflow: hidden;
-        .inner{
-          width: 100%;
-          height: 100%;
-        }
-        img{
-          object-fit: cover;
-        }
+      }
+  
+      img {
+        object-fit: cover;
+      }
+    }
+  
+    @media screen and (max-width: 396px) {
+      .imageContainer {
+        width: 200px;
+        border-radius: 10px;
       }
     }
   }

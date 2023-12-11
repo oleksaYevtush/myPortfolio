@@ -66,7 +66,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className=" w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            className=" w-[250px] h-[250px] lg:w-[400px] lg:h-[300px] relative">
             <Image
               src="/images/hero-image.webp"
               alt="hero image"
