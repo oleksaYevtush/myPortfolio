@@ -45,7 +45,7 @@ const HeroSection = () => {
               </span>
             </Link>
             <Link
-              href="https://drive.google.com/file/d/15xX_DRnQhfeAwSk76ZhLsY6Nl4Opnvel/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Et-xPGRivXdROlf5IVbZ5b1wgDRQFZk7/view?usp=sharing"
               passHref
               target="_blank"
               rel="noopener noreferrer"
