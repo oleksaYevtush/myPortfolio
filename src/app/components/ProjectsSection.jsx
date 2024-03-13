@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "🧘🏼‍♀️Health Mantra",
     description: "TypeScript | Tailwind CSS | react-spring | React-Hooks | framer-motion | Lenis",
-    image: "/images/projects/1.png",
+    image: "/images/projects/01.webp",
     tag: ["All", "Tailwind", "React.js"],
     gitUrl: "https://github.com/oleksaYevtush/healthMantra",
     previewUrl: "https://health-mantra.vercel.app/",
