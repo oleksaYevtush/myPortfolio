@@ -7,15 +7,24 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "🧘🏼‍♀️Health Mantra",
+    description: "TypeScript | Tailwind CSS | react-spring | React-Hooks | framer-motion | Lenis",
+    image: "/images/projects/1.png",
+    tag: ["All", "Tailwind", "React.js"],
+    gitUrl: "https://github.com/oleksaYevtush/healthMantra",
+    previewUrl: "https://health-mantra.vercel.app/",
+  },
+  {
+    id: 2,
     title: "☕️Coffee World",
     description: "i18next | Formik | react-spring | React-Hooks | framer-motion | yup",
     image: "/images/projects/1.png",
     tag: ["All", "Next.js"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/oleksaYevtush/Coffee_World",
+    previewUrl: "https://coffee-world-olexaevtush.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "🍝Dish Delight",
     description: "ReactHooks | API | SCSS | Bootstrap | adaptive",
     image: "/images/projects/2.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "https://dishdelight.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "📖Booklib",
     description: "React-Hooks | API | SCSS",
     image: "/images/projects/3.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://booklib-react.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "🥐Fresh Bakery",
     description: "Bootstrap | JS | adaptive",
     image: "/images/projects/4.png",
@@ -42,7 +51,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 5,
+    id: 6,
     title: "🧖🏼‍♀️Skincare",
     description: "Bootstrap | JS | animation",
     image: "/images/projects/5.png",
@@ -51,7 +60,7 @@ const projectsData = [
     previewUrl: "https://olexaevtush.github.io/Skincare/",
   },
   {
-    id: 6,
+    id: 7,
     title: "📲Namelist",
     description: "JS | React-Hooks | fetch",
     image: "/images/projects/6.png",
@@ -60,7 +69,7 @@ const projectsData = [
     previewUrl: "https://react-namelist-olexaevtush.vercel.app",
   },
   {
-    id: 7,
+    id: 8,
     title: "🌃FavoriteTour",
     description: "JS | adaptive | animation",
     image: "/images/projects/7.png",
@@ -69,13 +78,13 @@ const projectsData = [
     previewUrl: "https://olexaevtush.github.io/FavoriteTour/",
   },
   {
-    id: 8,
+    id: 9,
     title: "👩🏻‍💻My Portfolio",
     description: "Next.js | Tailwind CSS | framer-motion | react-scroll",
     image: "/images/projects/8.png",
     tag: ["All","Next.js", "Tailwind"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/oleksaYevtush/myPortfolio",
+    previewUrl: "https://portfolio-oleksa-yevtush.vercel.app/",
   }
 ];
 
