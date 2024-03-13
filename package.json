@@ -27,7 +27,7 @@
     "sass": "^1.69.5",
     "sharp": "^0.33.0",
     "styled-components": "^6.1.1",
-    "tailwindcss": "3.3.3",
+    "tailwindcss": "3.3.3"
   },
   "description": "This is a portfolio website with Next.js and Tailwind CSS.",
   "main": "next.config.js",
