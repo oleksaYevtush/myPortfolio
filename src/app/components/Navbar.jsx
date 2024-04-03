@@ -32,13 +32,13 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="  border-none top-0 left-0 right-0 bg-[#180f1f] bg-opacity-100">
+    <nav className="border-none top-0 left-0 right-0 bg-[#180f1f] bg-opacity-100">
       <div className="container flex flex-wrap items-center justify-between px-12 py-2 mx-auto lg:py-4">
         <Link
           href={"/"}
           className="text-2xl font-semibold text-white md:text-5xl">
-          <Image src={Workplace} width={40}
-            height={40} alt="workplace" />
+          <Image src={Workplace} width={60}
+            height={60} alt="workplace" />
         </Link>
         <div className="block mobile-menu md:hidden">
         {!navbarOpen ? (

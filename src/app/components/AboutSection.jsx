@@ -17,15 +17,15 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div ref={ref} className={`md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ${inView ? "visible" : "invisible"}`}>
-        <motion.div className="lg:h-[375px] relative" 
+        <motion.div className="relative" 
         variants={containerVariants} 
         initial="hidden"
         animate={inView ? "visible" : "hidden"}>
           <div className="hidden md:block sm:block">
             <Image
-              className="rounded-t-xl lg:w-[320px] lg:h-[320px] md:w-[220px] md:h-[220px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="rounded-t-xl lg:w-[420px] lg:h-[320px] md:w-[320px] md:h-[220px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src="/images/about-image.webp"
-              width={320}
+              width={420}
               height={320}
               alt="About"
               loading="lazy"
@@ -38,7 +38,7 @@ const AboutSection = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}>
           <h2 className="mb-4 text-4xl font-bold font-title ext-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-200">About Me</h2>
-          <p className="text-[#e0cbe1] lg:text-lg ">
+          <p className="text-[#e0cbe1] lg:text-lg font-title">
             I am an ambitious front-end developer transitioning from a successful career in medicine to IT.
             <br />
             I utilize skills learned in medicine such as attention to detail and problem solving on my own. I believe that I can become a valuable employee and help achieve the project's success.
