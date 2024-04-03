@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.18",
     "@studio-freight/lenis": "^1.0.29",
     "@vercel/analytics": "^1.2.2",
+    "abab": "^2.0.6",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.15",
     "framer-motion": "^10.16.12",
