@@ -41,7 +41,7 @@ const AboutSection = () => {
           <p className="text-[#e0cbe1] lg:text-lg font-title">
             I am an ambitious front-end developer transitioning from a successful career in medicine to IT.
             <br />
-            I utilize skills learned in medicine such as attention to detail and problem solving on my own. I believe that I can become a valuable employee and help achieve the project's success.
+            I utilize skills learned in medicine such as attention to detail and problem solving on my own. I believe that I can become a valuable employee and help achieve the projects success.
           </p>
         </motion.div>
       </div>
