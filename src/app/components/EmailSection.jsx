@@ -36,7 +36,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <Image src="/images/connect.webp" alt="Connect Image" width={320} height={320} />
+        <Image src="/images/connect.webp" alt="Connect Image" width={420} height={420} />
       </div>
     </section>
   );
