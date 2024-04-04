@@ -23,10 +23,10 @@ const AboutSection = () => {
         animate={inView ? "visible" : "hidden"}>
           <div className="hidden md:block sm:block">
             <Image
-              className="rounded-t-xl lg:w-[420px] lg:h-[320px] md:w-[320px] md:h-[220px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="rounded-t-xl lg:w-[400px] lg:h-[400px] md:w-[320px] md:h-[320px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src="/images/about-image.webp"
-              width={420}
-              height={320}
+              width={400}
+              height={400}
               alt="About"
               loading="lazy"
             />
