@@ -39,7 +39,7 @@ const AboutSection = () => {
           animate={inView ? "visible" : "hidden"}>
           <h2 className="mb-4 text-4xl font-bold font-title ext-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-200">About Me</h2>
           <p className="text-[#e0cbe1] lg:text-lg font-title">
-            I am an ambitious front-end developer transitioning from a successful career in medicine to IT.
+          I’m an ambitious front-end developer transitioning from medicine to IT, applying skills like attention to detail and problem-solving. I’m confident in becoming a valuable asset to project’s success
             <br />
             I utilize skills learned in medicine such as attention to detail and problem solving on my own. I believe that I can become a valuable employee and help achieve the projects success.
           </p>
