@@ -49,7 +49,7 @@ const TAB_DATA = [
       <ul className="grid grid-cols-2 pl-2 mb-5 list-disc gap-x-11">
         <li>Frontend Developer
           <p class="mb-1 mt-1 from-primary-700">_Baza Trainee Ukraine</p>
-          <p>since October 2023</p>
+          <p>since 2023</p>
           <p class="mb-6"><span>&apos;//</span>For Kyiv hospital</p>
           <Link href="https://for-kyiv-hospital.vercel.app">
             <Image
@@ -63,7 +63,7 @@ const TAB_DATA = [
         </li>
         <li>Frontend Developer
           <p class="mb-1 mt-1 from-primary-700">_Baza Trainee Ukraine</p>
-          <p>since August 2023</p>
+          <p>since 2024</p>
           <p class="mb-6"><span>&apos;//</span>antiCorruption</p>
           <Link href="https://anti-corruption.vercel.app">
             <Image
