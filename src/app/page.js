@@ -64,7 +64,7 @@ export default function Home({ pageProps }) {
               <AboutSection />
               <SkillSection />
               <ProjectsSection />
-              <div style={{ paddingBottom: "200px" }}>
+              <div style={{ paddingBottom: "200px" }} id="certificate">
                 {projects.map((project, i) => {
                   const targetScale = 1 - ((projects.length - i) * 0.05);
                   return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * 0.25, 1]} targetScale={targetScale} />;
