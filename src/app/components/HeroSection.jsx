@@ -7,22 +7,19 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="pb-[130px] md:pb-[30px] sm:pb-[30px] xs:pb-[30px]">
+    <section className="pb-[130px] md:pb-[30px] sm:pb-[30px] xs:pb-[30px] relative">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className=" bg-[#612c8bb2] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-50 -left-45 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-3000"></div>
-        <div className=" bg-[#aa31bdae] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-30 -left-55 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-2000"></div>
-        <div className=" bg-[#5c23c6af] rounded-[15px] md:-translate-x-1/4 h-80 w-80 blur-[125px] scale-120 opacity-130 absolute top-30 -left-65 transform -translate-x-1/2 -translate-1/2 animate-infinite animate-pulse animation-delay-4000"></div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="col-span-8 text-center place-self-center sm:text-left justify-self-start">
+          className="relative z-10 col-span-8 text-center place-self-center sm:text-left justify-self-start">
           <h1 className="mb-4 text-3xl font-bold text-[#f0e2f1] md:text-6xl sm:text-5xl lg:text-7xl lg:leading-normal">
             <span className="text-transparent font-title bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-200">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
-            <TypeAnimation
+            <TypeAnimation 
               sequence={[
                 ">_Oleksandra",
                 1000,
@@ -37,19 +34,19 @@ const HeroSection = () => {
               className="font-title" />
           </h1>
           <div>
-            <Link
-              href="/#certificate"
-              className="z-0 inline-block w-full px-1 py-1 mr-4 text-white rounded-full sm:w-fit bg-[#121212] hover:bg-slate-800 bg-gradient-to-br from-primary-500 to-secondary-500">
-              <span id="certificate" className="font-title block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Certificate
-              </span>
-            </Link>
+          <Link
+            href="#certificate"
+            className="z-10 inline-block w-full px-1 py-1 mr-4 text-white transition-colors duration-300 rounded-full pointer-events-auto sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800">
+            <span className="font-title block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 transition-colors duration-300">
+              Certificate
+            </span>
+          </Link>
             <Link
               href="https://drive.google.com/file/d/1gn9dG-VI1sWgYFYE0GB_0JxSlcWbGz_w/view?usp=sharing"
               passHref
               target="_blank"
               rel="noopener noreferrer"
-              className="z-1 inline-block w-full px-1 py-1 mt-3 text-[#e0cbe1] rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800">
+              className="z-1 inline-block w-full px-1 py-1 mt-3 text-[#e0cbe1] rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 pointer-events-auto">
               <span className="font-title block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 CV
               </span>
@@ -60,7 +57,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="col-span-4 sm:mt-8 place-self-center">
+          className="relative z-10 col-span-4 sm:mt-8 place-self-center">
           <div className="relative lg:mt-4">
           <motion.div
             initial={{ opacity: 0 }}
