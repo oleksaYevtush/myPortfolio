@@ -1,0 +1,8 @@
+{
+  "name": "Oleksa Yevtush Portfolio",
+  "description": "Portfolio website showcasing projects, skills, and experience built with Next.js and Tailwind CSS.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
