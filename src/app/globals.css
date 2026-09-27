@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+:root {
+  --foreground-rgb: 240, 240, 240;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 240, 240, 240;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 240, 240, 240;
+    --background-start-rgb: 37, 37, 37;
+    --background-end-rgb: 116, 68, 120;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'Title';
+  src: url('../../public/fonts/Neglige.otf');
+}
+
+@layer components {
+  .font-title {
+    font-family: 'Title', sans-serif;
+  }
+}
+
+.cursor {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #b074cb;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none !important;
+  }
+}
+
+
