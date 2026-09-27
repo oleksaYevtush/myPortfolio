@@ -34,7 +34,7 @@ const HeroSection = () => {
               className="font-title text-pink-300" />
           </h1>
           <p className="text-[#e0cbe1] text-base sm:text-lg mb-6 max-w-xl font-title">
-            Passionate Frontend Developer focused on creating responsive, intuitive, and modern web applications.
+            Junior Frontend Developer transitioning into tech from healthcare, bringing a problem-solving mindset and a growing set of skills in React, JavaScript, and responsive design
           </p>
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto justify-center lg:justify-start">
             <Link
@@ -45,7 +45,7 @@ const HeroSection = () => {
               </span>
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1IBtvUePEw904tT-Rb7eTUBH814ryQDq7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-LWTRxebrPa34FBlES8s-qQEZhNhIX4Q/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="z-10 inline-block px-1 py-1 text-[#e0cbe1] rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:shadow-lg hover:shadow-pink-500/25">
@@ -64,7 +64,7 @@ const HeroSection = () => {
             <div className="w-full h-full rounded-full overflow-hidden bg-[#180f1f] relative">
               <Image
                 src="/images/hero-image.webp"
-                alt="Oleksandra Yevtush - Frontend Developer"
+                alt="Oleksandra Yevtusenko - Frontend Developer"
                 fill
                 sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 384px"
                 className="object-cover object-center rounded-full"
