@@ -17,7 +17,7 @@ const AboutSection = () => {
   return (
     <section className="text-white py-8 sm:py-12 md:py-16" id="about">
       <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center ${inView ? "visible" : "invisible"}`}>
-        <motion.div className="flex justify-center" 
+        <motion.div className="hidden md:flex justify-center" 
           variants={containerVariants} 
           initial="hidden"
           animate={inView ? "visible" : "hidden"}>

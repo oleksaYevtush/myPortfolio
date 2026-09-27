@@ -24,27 +24,18 @@ export default function Home({ pageProps }) {
   const [Loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    (
-      async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll();
-  
-        setTimeout(() => {
-          setLoaded(false); 
-          document.body.style.cursor = 'default'
-          window.scrollTo(0, 0);
-        }, 2000)
-      }
-    )()
-  
-    function raf(time) {
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  
-    setTimeout(() => {
+    if (typeof window === 'undefined') return;
+
+    const timer = setTimeout(() => {
       setLoaded(true);
+      document.body.style.cursor = 'default';
+      window.scrollTo({ top: 0, behavior: 'auto' });
     }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+      document.body.style.cursor = 'default';
+    };
   }, []);
   
   
