@@ -26,7 +26,7 @@ const AboutSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}>
-          <div className="relative w-60 h-60 sm:w-72 sm:h-72 lg:w-88 lg:h-88 rounded-2xl overflow-hidden border border-purple-500/30 shadow-xl shadow-purple-950/50">
+          <div className="relative w-60 h-60 sm:w-72 sm:h-72 lg:w-[22rem] lg:h-[22rem] rounded-2xl overflow-hidden border border-purple-500/30 shadow-xl shadow-purple-950/50">
             <Image
               className="object-cover"
               src="/images/about-image.webp"

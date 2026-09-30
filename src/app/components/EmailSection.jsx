@@ -52,7 +52,7 @@ const EmailSection = () => {
             <Image src={GithubIcon} alt="Github Icon" width={28} height={28} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/оleksa-yevtush/"
+            href="https://www.linkedin.com/in/oleksa-yevtush/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
