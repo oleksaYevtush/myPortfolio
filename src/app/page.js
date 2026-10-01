@@ -25,13 +25,17 @@ export default function Home({ pageProps }) {
 
   useEffect(() => {
     let locomotiveInstance = null;
+    let cancelled = false;
 
     (async () => {
       try {
         const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        if (cancelled) return;
         locomotiveInstance = new LocomotiveScroll();
-      } catch (e) {
-        // Fallback gracefully if locomotive-scroll fails on mobile/SSR
+      } catch (error) {
+        if (!cancelled) {
+          console.error('Failed to initialize locomotive-scroll:', error);
+        }
       }
     })();
 
@@ -41,6 +45,7 @@ export default function Home({ pageProps }) {
     }, 1200);
 
     return () => {
+      cancelled = true;
       clearTimeout(timer);
       if (locomotiveInstance && typeof locomotiveInstance.destroy === 'function') {
         locomotiveInstance.destroy();
@@ -82,7 +87,7 @@ export default function Home({ pageProps }) {
             <EmailSection />
           </div>
           <Footer />
-          <ScrollToTopButton scrollProgress={scrollYProgress} />
+          <ScrollToTopButton />
           <Cursor />
         </>
       )}

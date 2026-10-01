@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import Image from 'next/image';
-import GithubIcon from '../../../public/github-icon.svg';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,6 +12,7 @@ const ScrollToTopButton = () => {
       }
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

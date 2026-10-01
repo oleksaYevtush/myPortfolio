@@ -24,7 +24,6 @@ export const projects = [
     title: "Responsive Website Basics: Code with HTML, CSS, and JavaScript",
     description: "University of London - Coursera",
     src: "5.webp",
-    link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
     color: "#520f4c"
   },
   {
